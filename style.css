@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-top: 5%;
+gap: 50px;
+width: 80%;
+}
+
+
+header{
+    padding-top: 5%;
+}
