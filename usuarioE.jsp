@@ -16,13 +16,14 @@
             usuario = request.getParameter("usuario");
             senha = request.getParameter("senha");
 
+
             try {
                 Connection conecta;
                 PreparedStatement st;
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 String url = "jdbc:mysql://localhost:3306/db_login";
                 String user = "root";
-                String password = "root";
+                String password = "maria";
 
                 conecta = DriverManager.getConnection(url, user, password);
                 String sql = ("SELECT * FROM tb_login WHERE usuario = ? AND senha = ?");
@@ -30,15 +31,15 @@
                 st.setString(1, usuario);
                 st.setString(2, senha);
                 ResultSet rs = st.executeQuery();
-                if(rs.next()){
-    out.println("<p>Login bem-sucedido!</p>");
-            }else
-    out.println("<p>Deu bosta</p>"
-    + "<button><a href='cadastrar.html'>Clique aqui para cadastrar</a></button>");
-                
+                if (rs.next()) {
+                    response.sendRedirect("cadastrar.html");
+                } else {
+                    response.sendRedirect("index.html");
+                }
             } catch (Exception x) {
-            out.print ("Mensagem de erro: " + x.getMessage());
+                out.print("Mensagem de erro: " + x.getMessage());
             }
-            %>
+        %>
     </body>
 </html>
+
