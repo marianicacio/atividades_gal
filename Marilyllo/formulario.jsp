@@ -10,6 +10,7 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_form.css"/>
     </head>
     <body>
         <%
@@ -33,11 +34,12 @@
 
 
         %>
+        <main>
+        <h1>Entrada</h1>
 
-        <form action="action">
-            <input type="text" name="placa">
-            <input type="datetime-local" name="data_hora_entrada">
-            <input type="datetime-local" name="data_hora_saida">
+        <form action="cadastro.jsp">
+            <input type="text" name="placa" placeholder="placa">
+            <input type="datetime-local" name="data_hora_entrada" placeholder="Entrada">
             <select id="id">
                 <option value="first">Vagas</option>
                 <%             while (rs.next()) {
@@ -50,9 +52,10 @@
 
             <button type="submit">Entrar</button>
         </form
+        </main>
+        
         <!-- Finalizei o codigo java acima agora vou criar o corpo da tabela html para
         mostrar os dados trazidos do Banco de dados-->
-    </table>
     <%
         } catch (Exception x) {
             out.print("Mensagem de erro: " + x.getMessage());
