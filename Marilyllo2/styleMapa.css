@@ -23,10 +23,12 @@ header {
     gap: 20px;
 }
 
-header a {
-    padding: 20px;
-    background-color:#cccccc;
+.reset{
+    padding: 2px 2px;
+    text-align: center;
+    background-color: white;
     border: 1px solid black;
+    font-weight: 600;
 }
 
 header article {
@@ -36,6 +38,11 @@ header article {
     gap: 30px;
 }
 
+header article a img {
+    width: 200px;
+    height: 200px;
+}
+
 header nav {
     display: flex;
     gap: 40px;
@@ -43,6 +50,8 @@ header nav {
 
 header nav a {
     background-color: transparent;
+    font-size: 15px;
+    font-weight: 200;
     border: none;
     color: white;
     padding: 0;
