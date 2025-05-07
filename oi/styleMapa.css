@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #03112B;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 140px;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+header article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+header article a {
+    color: white;
+}
+
+header article div a::after {
+    height: 0px;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.5s ease;
+}
+
+a:hover::after {
+  width: 105%;
+}
+
+.reset{
+    padding: 2px 2px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.reset:hover {
+    background-color: #03112B;
+    color: white;
+    transition: 0.5s all;
+}
+
+header article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+header article a img {
+    width: 250px;
+    height: 250px;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    color: white;
+    padding: 0;
+}
