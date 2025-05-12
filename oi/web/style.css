@@ -71,6 +71,7 @@ form button {
     background-color: rgb(206, 223, 255, 22%);
     border-radius: 15px;
     border: solid white 2px;
+    cursor: pointer;
     font-size: 18px;
     transition: all ease 0.4s;
 }
@@ -102,7 +103,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
     gap: 50px;
 }
 

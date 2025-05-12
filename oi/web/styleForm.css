@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: #03112B;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     font-family: "Roboto", sans-serif;
     flex-direction: column;
+    background-color: #000040;
 }
 
 header {
@@ -81,12 +81,12 @@ header article a img {
     margin: -40px;
 }
 
-header nav {
+header article nav {
     display: flex;
     gap: 40px;
 }
 
-header nav a {
+header article nav a {
     background-color: transparent;
     font-size: 18px;
     font-weight: 200;

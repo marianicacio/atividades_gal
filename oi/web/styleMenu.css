@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #03112B;
+    background-color: #000040;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ header nav {
 header nav a {
     background-color: transparent;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 800;
     border: none;
     color: white;
     padding: 0;

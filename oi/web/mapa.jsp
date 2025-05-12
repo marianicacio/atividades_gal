@@ -43,9 +43,9 @@
                 <div><a href="menu.jsp"><img src="Marilyllo.png" alt="logo estacionamento"/></a></div>
                 <nav>
                     <a href="formulario.jsp">Entrada</a>
-                    <a href="#">Saida</a>
+                    <a href="#">Saída</a>
                     <a href="mapa.jsp">Mapa</a>
-                    <a href="#">Relatorio</a>
+                    <a href="#">Relatório</a>
                     <a href="configuracao.jsp">Configurações</a>
                 </nav>
                 <a href="logout.jsp">Logout</a>
@@ -62,7 +62,7 @@
             <form action="cinema.jsp" method="post">
 
                 <input type="hidden" name="vaga" value="<%=rs.getString("numero")%>">
-                <button type="submit" style="background-color: green; cursor: pointer; width: 100px; height: 100px; display: flex; justify-content: center; flex-direction: column; align-items: center; border: 1px solid white; color: white;">
+                <button type="submit" style="background-color: #065732; cursor: pointer; width: 100px; height: 100px; display: flex; justify-content: center; flex-direction: column; align-items: center; border: 1px solid white; color: white;">
                     <p>Vaga <%=rs.getString("numero")%></p>
                     <p>Disponível!</p>
                 </button>
@@ -75,7 +75,7 @@
             <form action="saidaform.jsp" method="post">
 
                 <input type="hidden" name="vaga" value="<%=rs.getString("numero")%>">
-                <button type="submit" style="background-color: red; cursor: pointer; width: 100px; height: 100px; display: flex; justify-content: center; flex-direction: column; align-items: center; border: 1px solid white; color: white;">
+                <button type="submit" style="background-color: #830018; cursor: pointer; width: 100px; height: 100px; display: flex; justify-content: center; flex-direction: column; align-items: center; border: 1px solid white; color: white;">
                     <p>Vaga <%=rs.getString("numero")%></p>
                     <p>Ocupada!</p>
                 </button>

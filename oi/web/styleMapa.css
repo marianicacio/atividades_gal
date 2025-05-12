@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #03112B;
+    background-color: #000040;
     font-family: "Roboto", sans-serif;
 }
 
@@ -69,11 +69,12 @@ a:hover::after {
 }
 
 .reset{
-    padding: 2px 2px;
+    padding: 15px 20px;
     text-align: center;
     border-radius: 5px;
     background-color: white;
     font-weight: 600;
+    transition: all ease 0.8s;
 }
 
 .reset:hover {
@@ -99,10 +100,9 @@ header nav {
     gap: 40px;
 }
 
-header nav a {
+header article nav a {
     background-color: transparent;
     font-size: 18px;
-    font-weight: 200;
     border: none;
     color: white;
     padding: 0;

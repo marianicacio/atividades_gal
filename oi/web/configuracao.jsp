@@ -19,18 +19,19 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesConfig.css"/>
     </head>
     <body>
-        <header style="display: flex; flex-direction: column; align-items: center; justify-content: space-between">
-            <article style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
-            <a href="menu.jsp"><h1>Estacionamento!</h1></a>
-            <nav style="display: flex; gap: 40px;">
-                <a href="formulario.jsp">Entrada de Carros</a>
-                <a href="#">Saida de Carros</a>
-                <a href="mapa.jsp">Mapa em tempo real</a>
-                <a href="#">Gerar Relatorio</a>
-                <a href="configuracao.jsp">Configurações</a>
-            </nav>
+        <header>
+            <article>
+                <div><a href="menu.jsp"><img src="Marilyllo.png" alt="alt"/></a></div>
+                <nav>
+                    <a href="formulario.jsp">Entrada</a>
+                    <a href="#">Saida</a>
+                    <a href="mapa.jsp">Mapa</a>
+                    <a href="#">Relatorio</a>
+                    <a href="configuracao.jsp">Configurações</a>
+                </nav>
                 <a href="logout.jsp">Logout</a>
             </article>
         </header>
