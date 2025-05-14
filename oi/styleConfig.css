@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 140px;
+    gap: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+header article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+header article div a::after {
+    height: 0px;
+}
+
+header article a {
+    color: white;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+a:hover::after {
+    width: 105%;
+}
+
+header article a img {
+    width: 250px;
+    height: 250px;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    color: white;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    background-color: #11114e;
+    width: 20%;
+    min-width: 450px;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+    border: 1px solid black;
+    padding: 40px 20px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+input {
+    height: 50px;
+    background-color: rgb(255,255,255, 0.40);
+    color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+}
+
+input::placeholder {
+    color: white;
+}

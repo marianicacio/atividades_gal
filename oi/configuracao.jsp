@@ -19,7 +19,7 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesConfig.css"/>
+        <link rel="stylesheet" href="styleConfig.css"/>
     </head>
     <body>
         <header>
@@ -35,16 +35,16 @@
                 <a href="logout.jsp">Logout</a>
             </article>
         </header>
-        <main style="display: flex; justify-content: center; height: 50vh; align-items: center; padding: 80px">
-            <form action="configurar.jsp" method="post" style="display: flex; width: 20%; min-width: 450px; flex-direction: column; align-items: center; justify-items: center; gap: 40px; border: 1px solid black; padding: 40px 20px;">
+        <main>
+            <form action="configurar.jsp" method="post" >
                 <h1>Configurações</h1> 
-                <p style="display: flex; flex-direction: column; width: 100%; gap: 20px;">
+                <p>
                     <label>Valor Primeira Hora</label>
-                    <input style="height: 40px; padding-left: 10px; border-radius: 5px; outline:none;"  placeholder="Valor Primeira Hora" required name="valor_primeira_hora">
+                    <input  placeholder="Valor Primeira Hora" required name="valor_primeira_hora">
                 </p>
-                <p style="display: flex; flex-direction: column; width: 100%; gap: 20px;">
+                <p>
                     <label>Valor Horas Adicionais</label>
-                    <input style="height: 40px; padding-left: 10px; border-radius: 5px; outline:none;" placeholder="Valor Horas Adicionais" required name="valor_hora_adicional">
+                    <input placeholder="Valor Horas Adicionais" required name="valor_hora_adicional">
                 </p>
                 <input value="31" hidden name="vagas_totais">
                     
