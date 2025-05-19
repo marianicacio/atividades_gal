@@ -55,25 +55,26 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="styleSaida.css"/>
     </head>
     <body>
-        <header style="display: flex; flex-direction: column; align-items: center; justify-content: space-between">
-            <article style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
-            <a href="menu.jsp"><h1>Estacionamento!</h1></a>
-            <nav style="display: flex; gap: 40px;">
-                <a href="formulario.jsp">Entrada de Carros</a>
-                <a href="#">Saida de Carros</a>
-                <a href="mapa.jsp">Mapa em tempo real</a>
-                <a href="#">Gerar Relatorio</a>
-                <a href="configuracao.jsp">Configurações</a>
-            </nav>
+        <header>
+            <article>
+                <div><a href="menu.jsp"><img src="Marilyllo.png" alt="alt"/></a></div>
+                <nav>
+                    <a href="formulario.jsp">Entrada</a>
+                    <a href="#">Saida</a>
+                    <a href="mapa.jsp">Mapa</a>
+                    <a href="#">Relatorio</a>
+                    <a href="configuracao.jsp">Configurações</a>
+                </nav>
                 <a href="logout.jsp">Logout</a>
             </article>
         </header>
         
-        <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+        <main>
             <h1><%=placa%></h1>
-            <form action="entresaida.jsp" style="align-items: center; display: flex; flex-direction: column">
+            <form action="entresaida.jsp">
                 <h1>Saida de Veiculos</h1>
                 
                 <input hidden value="<%=placa%>" name="placa">
@@ -82,7 +83,7 @@
                 <p><%=dataHora%></p>
                 <label>Horario de Saida</label>
                 <input type="datetime-local" name="data_hora_saida" placeholder="horario de saida" min="<%=dataHora%>" required>
-                <input value="Sair" type="submit">
+                <button type="submit">Sair</button>
                 
             </form>
 
